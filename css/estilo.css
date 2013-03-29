@@ -1,0 +1,328 @@
+body
+{
+	font-family: sans-serif, Helvetica, Tahoma;
+	border-top:10px solid #F3432C;
+	background:#F6F6F6;
+	font-size:62.5%;
+	z-index:1001;
+}
+
+
+/*===================================
+-------------------------------------
+============= CABECALHO =============
+-------------------------------------
+===================================*/
+
+header
+{
+	position:relative;
+
+	border-bottom:1px solid rgba(0, 0, 0, 0.1);
+	margin:20px auto 0;
+	height:130px;
+	width:93%;
+}
+
+header > img
+{
+	margin-left:20px;
+	height:110px;
+	width:130px;
+}
+
+/*===================================
+======== REDES S. & CONTATO =========
+===================================*/
+
+@font-face {
+	font-family: 'social';
+	src:url('../fonts/social.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+header .icons
+{
+	position: absolute;
+	right: 1px;
+	top:104px;
+}
+
+.icons a
+{
+	font-family: 'social';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	font-size:25px;
+	margin-left:18px;
+	color: #222;
+
+	-webkit-transition:0.4s all;
+	-moz-transition:0.4s all;
+	transition:0.4s all;
+}
+
+.icons a:hover
+{
+	color:#FF0000;
+}
+.icon-facebook:before {
+	content: "\e000";
+}
+.icon-google-plus:before {
+	content: "\e001";
+}
+.icon-twitter:before {
+	content: "\e002";
+}
+.icon-mail:before {
+	content: "\e003";
+}
+
+
+/*===================================
+========== USUARIO LOGADO ===========
+===================================*/
+
+
+header > p
+{
+	position:absolute;
+	right:1px;
+	top:97px;
+
+	font-size:1.5em;
+}
+
+header > p > span {color:rgba(0, 0, 0, 0.2);}
+
+
+/*===================================
+========== PAINEL ADMIN. ============
+===================================*/
+
+#painel-admin
+{
+	width:93%;
+	margin:0 auto 30px;
+	display:table;
+}
+
+#painel-admin a
+{
+	font-size:15px;
+	text-decoration:none;
+	color:#222;
+	display:table-cell;
+	width:188px;
+	height:30px;
+	border-right:1px solid rgba(0,0,0,0.1);
+	border-bottom:3px solid rgba(0,0,0,0.1);
+	text-align:center;
+	vertical-align:middle;
+
+	-webkit-transition:0.4s all;
+	-moz-transition:0.4s all;
+	transition:0.4s all;
+}
+
+#painel-admin a:first-child
+{
+	border-left:2px solid rgba(0,0,0,0.1);
+}
+
+#painel-admin a:hover
+{
+	font-weight:bold;
+	background:#CCC;
+	color:#FEFEFE;
+}
+
+
+/*====================================
+-------------------------------------
+============= CONTEUDO ==============
+-------------------------------------
+===================================*/
+
+#conteudo
+{
+	margin:0 auto;
+	width:93%;
+}
+
+
+/*===================================
+========== ALUNO - NOTAS ============
+===================================*/
+
+#notas
+{
+	width:60%;
+}
+
+#notas > table
+{
+	width:80%;
+	font-size:1.2em;
+	margin-top:40px;
+	vertical-align:middle;
+}
+
+#notas > table tr
+{
+	height:25px;
+}
+
+#notas > table  tr th
+{
+	background:#F0F0F0;
+	width:60%;
+}
+
+#notas > table tr:not(:first-child) th
+{
+	text-align:left;
+}
+
+#notas > table tr th:nth-child(2)
+{
+	text-align:center;
+}
+
+#notas > table tr td:nth-child(2)
+{
+	text-align:center;
+}
+
+
+/*===================================
+====== ADMIN - CADASTRO ALUNOS ======
+===================================*/
+#cadastro-usuarios
+{
+    float:left;
+    width:260px;
+    height:250px;
+}
+
+#cadastro-usuarios input[name~=nome] {background:url(img/nome.png) no-repeat 1px 5px #FFF;}
+#cadastro-usuarios input[name~=usuario] {background:url(img/usuario.png) no-repeat 1px 5px #FFF;}
+#cadastro-usuarios input[name~=senha] {background:url(img/senha.png) no-repeat 1px 5px #FFF;}
+#cadastro-usuarios input[name~=email] {background:url(img/email.png) no-repeat 1px 5px #FFF;}
+
+
+/*===================================
+====== ADMIN - CADASTRO INST. =======
+===================================*/
+#cadastro-instituicoes
+{
+    float:left;
+    width:260px;
+    height:250px;
+    margin-left:150px;
+}
+
+input[name=instituicoes] {background:url(img/escola.png) no-repeat 2px 3px #FFF;}
+input[name=cursos] {background:url(img/curso.png) no-repeat 2px 3px #FFF;}
+input[name=turmas] {background:url(img/turma.png) no-repeat 2px 3px #FFF;}
+input[name=disciplinas] {background:url(img/disciplina.png) no-repeat 2px 3px #FFF;}
+
+/*====================================
+--------------------------------------
+========== REUTILIZAVEIS =============
+-------------------------------------
+====================================*/
+
+/**
+* Classe .campo
+*  formata campos de texto, senha, combos, etc.
+*/
+.campo
+{
+    width:250px;
+	height:30px;
+	display:block;
+	font-size:1.2em;
+	padding-left:25px;
+	margin-bottom:10px;
+	border:1px solid rgba(0,0,0,0.2);
+	
+	-webkit-transition:0.4s all;
+	-moz-transition:0.4s all;
+	transition:0.4s all;
+}
+
+.campo:focus
+{
+    border:1px solid rgba(0,0,0,0.6);
+}
+
+.combo
+{
+	width:250px;
+	height:30px;
+	display:block;
+	font-size:1.2em;
+	margin-bottom:10px;
+	border:1px solid rgba(0,0,0,0.2);
+	
+	padding-top:5px;
+}
+
+
+/**
+* Classe .bt
+*  formata, para padronizar, botoes formularios
+*/
+.bt
+{    
+    width:120px;
+	height:30px;
+	color:#222222;
+	font-size:1.1em;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	line-height:28px;
+	margin-right:6px;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	
+	float:left;
+
+	
+	border:1px solid rgba(0,0,0,0.2);
+	background:#ECF4FC;
+    background:-webkit-linear-gradient(top,  #F0F0F0 0%,#E5E5E5 100%);
+    background:-moz-linear-gradient(top,  #F0F0F0 0%, #E5E5E5 100%);
+    background:-ms-linear-gradient(top,  #F0F0F0 0%,#E5E5E5 100%);
+    background:linear-gradient(to bottom,  #F0F0F0 0%,#E5E5E5 100%);
+}
+
+.bt:focus
+{
+    border:1px solid rgba(0,0,0,0.6);
+}
+
+.bt:hover
+{
+    border:1px solid #7EB4EA;
+    background:#ECF4FC;
+    background:-webkit-linear-gradient(top,  #ECF4FC 0%,#DCECFC 100%);
+    background:-moz-linear-gradient(top,  #ECF4FC 0%, #DCECFC 100%);
+    background:-ms-linear-gradient(top,  #ECF4FC 0%,#DCECFC 100%);
+    background:linear-gradient(to bottom,  #ECF4FC 0%,#DCECFC 100%);
+}
+
+/**
+* Classe .invisivel
+*  torna um elemento HTML invisivel
+*/
+.invisivel {display:none;}
+
+

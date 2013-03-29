@@ -1,0 +1,172 @@
+body
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.box
+{
+    font:normal 12px Arial, Helvetica, Sans-serif;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow:rgba(0,0,0,0.15) 0 0 1px;
+    -moz-box-shadow:rgba(0,0,0,0.15) 0 0 1px;
+    box-shadow:rgba(0,0,0,0.15) 0 0 1px;
+    background:#F6F6F6;
+    color:#555;
+    height:230px;
+    width:330px;
+    overflow:hidden;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-130px 0 0 -165px;
+}
+.boxBody
+{
+    background:#F6F6F6;
+    border:none;
+    border-top:1px solid #DDE0E8;
+    border-bottom:1px solid #DDE0E8;
+    padding:10px 20px;
+    height:160px;
+}
+
+.box footer
+{
+    background:#F0F0F0;
+    border-top:1px solid #FFF;
+    padding:20px 25px;
+    overflow:hidden;
+    height:70px;
+}
+.box label
+{
+    font:14px Arial, Helvetica, Sans-serif;
+    margin:10px 0 0 6px;
+}
+.box footer label{
+    float:left;
+    margin:4px 0 0;
+}
+.box footer input[type=checkbox]{
+    vertical-align:middle;
+    margin-right:10px;
+}
+.box input[type=text],
+.box input[type=password]{
+    border:6px solid rgba(0, 0, 0, 0.05);
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -moz-box-shadow:2px 3px 3px rgba(0, 0, 0, 0.1) inset, 0 0 1px #F3F3F3 inset;
+    -webkit-box-shadow:2px 3px 3px rgba(0, 0, 0, 0.1) inset, 0 0 1px #F3F3F3 inset;
+    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.1) inset, 0 0 1px #F3F3F3 inset;
+    margin:3px 0 4px;
+    padding:8px 5px;
+    width:282px;
+    display:block;
+
+    transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+}
+.box input[type=text]:focus,
+.box input[type=password]:focus,
+.txtField:focus,
+.cjComboBox:focus
+{
+    border:6px solid #E5E5E5;
+    -moz-box-shadow:2px 3px 3px rgba(0, 0, 0, 0.04) inset, 0 0 1px #F1F1F1 inset;
+    -webkit-box-shadow:2px 3px 3px rgba(0, 0, 0, 0.04) inset, 0 0 1px #F1F1F1 inset;
+    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.04) inset, 0 0 1px #F1F1F1 inset;
+    color:#222;
+}
+.cjComboBox
+{
+    width:294px;
+}
+.cjComboBox.small
+{
+    padding:3px 2px 3px 6px;
+    width:100px;
+    border-width:3px !important;
+}
+.txtField.small
+{
+    padding:3px 6px;
+    width:200px;
+    border-width:3px !important;
+}
+
+.rLink{padding:0 6px 0 0; font-size:11px; float:right;}
+.box a{color:#999;}
+.box a:hover, .box a:focus{text-decoration:underline;}
+.box a:active{color:#F3432C;}
+
+input[type=checkbox]
+{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    background:-webkit-linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0) );
+    background:-moz-linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0) );
+    border:1px solid rgba( 0, 0, 0, 0.5);
+    box-shadow:1px 1px 0px #DDE0E8;
+    border-radius:3px;
+    height:12px;
+    width:12px;
+}
+input[type=checkbox]:checked:before 
+{
+    content:"✔";
+    font-size:18px;
+    color:#F3432C;
+    position:relative;
+    top:-8px;
+    left:2px;
+}
+input[type=checkbox]:hover
+{
+    cursor:pointer;
+    background:-webkit-linear-gradient( rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.2) );
+    background:-moz-linear-gradient( rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.2) );
+}
+
+.btnLogin
+{
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    background:#F3432C;
+    background:-moz-linear-gradient(top, #F3432C, #FF0000);
+    background:-webkit-gradient(linear, left top, left bottom, from(#F3432C), to(#FF0000));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#F3432C', EndColorStr='#FF0000')";
+    border:1px solid #D93D27 !important;
+    cursor: pointer;
+    padding:11px 16px;
+    font:bold 11px Verdana, Tahomma, Geneva;
+    text-shadow:rgba(0,0,0,0.2) 0 1px 0px; 
+    color:#FFF;
+    -moz-box-shadow:inset rgba(255,255,255,0.6) 0 1px 1px, rgba(0,0,0,0.1) 0 1px 1px;
+    -webkit-box-shadow:inset rgba(255,255,255,0.6) 0 1px 1px, rgba(0,0,0,0.1) 0 1px 1px;
+    box-shadow:inset rgba(255,255,255,0.6) 0 1px 1px, rgba(0,0,0,0.1) 0 1px 1px;
+    margin-left:12px;
+    float:right;
+    padding:7px 21px;
+}
+
+.btnLogin:hover,
+.btnLogin:focus,
+.btnLogin:active{
+    background:#F3432C;
+    background:-moz-linear-gradient(top, #FF0000, #F3432C);
+    background:-webkit-gradient(linear, left top, left bottom, from(#FF0000), to(#F3432C));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF0000', EndColorStr='#F3432C')";
+}
+.btnLogin:active
+{
+    position:relative;
+    top:1px; 
+}
